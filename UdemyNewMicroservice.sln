@@ -9,9 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{D3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "catalog", "catalog", "{10F984F3-9021-49D1-973A-AC991691AB49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNewMicroservice.Catalog.Api", "UdemyNewMicroservice.Catalog.Api\UdemyNewMicroservice.Catalog.Api.csproj", "{E1F4814C-30F2-45FC-9FEE-F12C419864A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyNewMicroservice.Catalog.Api", "UdemyNewMicroservice.Catalog.Api\UdemyNewMicroservice.Catalog.Api.csproj", "{E1F4814C-30F2-45FC-9FEE-F12C419864A6}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B08A53D6-AA91-4B00-9240-56AC7F9DFEA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{6157B32A-2BD9-4F57-B0C0-AB02FA3BC9AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNewMicroservice.Shared", "..\UdemyNewMicroservice.Shared\UdemyNewMicroservice.Shared.csproj", "{91C53C39-01CC-4491-BCF4-80C912286700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,10 @@ Global
 		{B08A53D6-AA91-4B00-9240-56AC7F9DFEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B08A53D6-AA91-4B00-9240-56AC7F9DFEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B08A53D6-AA91-4B00-9240-56AC7F9DFEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C53C39-01CC-4491-BCF4-80C912286700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C53C39-01CC-4491-BCF4-80C912286700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C53C39-01CC-4491-BCF4-80C912286700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C53C39-01CC-4491-BCF4-80C912286700}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,6 +43,8 @@ Global
 		{D38E75C1-6ADB-45E6-8F83-55671A8AA5DD} = {E655B4E8-AF92-4086-8C8B-4B7D78303D7C}
 		{10F984F3-9021-49D1-973A-AC991691AB49} = {D38E75C1-6ADB-45E6-8F83-55671A8AA5DD}
 		{E1F4814C-30F2-45FC-9FEE-F12C419864A6} = {10F984F3-9021-49D1-973A-AC991691AB49}
+		{6157B32A-2BD9-4F57-B0C0-AB02FA3BC9AE} = {E655B4E8-AF92-4086-8C8B-4B7D78303D7C}
+		{91C53C39-01CC-4491-BCF4-80C912286700} = {6157B32A-2BD9-4F57-B0C0-AB02FA3BC9AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4A3B2D0-F757-4001-A25A-D22548EF4BBE}
