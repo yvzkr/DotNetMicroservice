@@ -14,6 +14,8 @@ namespace UdemyNewMicroservice.Shared.Extensions
             services.AddFluentValidationAutoValidation();
             services.AddValidatorsFromAssemblyContaining(assembly);
 
+
+            services.AddAutoMapper(assembly);
             return services;
         }
     }

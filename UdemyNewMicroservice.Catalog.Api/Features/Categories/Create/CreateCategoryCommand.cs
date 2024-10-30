@@ -1,5 +1,4 @@
-﻿using Amazon.Runtime.Internal;
-using MediatR;
+﻿using MediatR;
 using UdemyNewMicroservice.Shared;
 
 namespace UdemyNewMicroservice.Catalog.Api.Features.Categories.Create
