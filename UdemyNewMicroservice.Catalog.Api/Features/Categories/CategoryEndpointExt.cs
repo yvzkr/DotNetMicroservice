@@ -1,5 +1,6 @@
 ﻿using UdemyNewMicroservice.Catalog.Api.Features.Categories.Create;
 using UdemyNewMicroservice.Catalog.Api.Features.Categories.GetAll;
+using UdemyNewMicroservice.Catalog.Api.Features.Categories.GetById;
 
 namespace UdemyNewMicroservice.Catalog.Api.Features.Categories
 {
@@ -9,7 +10,8 @@ namespace UdemyNewMicroservice.Catalog.Api.Features.Categories
         {
             app.MapGroup("api/categories")
                 .CreateCategoryGroupItemEndpoint()
-                .GetAllCategoryGroupItemEndpoint();
+                .GetAllCategoryGroupItemEndpoint()
+                .GetByIdCategoryGroupItemEndpoint();
         }
     }
 }

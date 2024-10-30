@@ -1,12 +1,18 @@
 ﻿using System.Net;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using MediatR;
 using Refit;
 using ProblemDetails = Microsoft.AspNetCore.Mvc.ProblemDetails;
 
 
 namespace UdemyNewMicroservice.Shared
 {
+    public interface IRequestByServiceResult<T> : IRequest<ServiceResult<T>>;
+
+    public interface IRequestByServiceResult : IRequest<ServiceResult>;
+
+
     public class ServiceResult
     {
         [JsonIgnore] public HttpStatusCode Status { get; set; }
