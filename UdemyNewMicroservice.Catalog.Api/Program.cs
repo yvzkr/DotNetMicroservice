@@ -1,8 +1,7 @@
 using UdemyNewMicroservice.Catalog.Api;
 using UdemyNewMicroservice.Catalog.Api.Features.Categories;
+using UdemyNewMicroservice.Catalog.Api.Features.Courses;
 using UdemyNewMicroservice.Catalog.Api.Options;
-using UdemyNewMicroservice.Catalog.Api.Repositories;
-using UdemyNewMicroservice.Shared.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +16,7 @@ var app = builder.Build();
 
 
 app.AddCategoryGroupEndpointExt();
-
+app.AddCourseGroupEndpointExt();
 
 if (app.Environment.IsDevelopment())
 {
