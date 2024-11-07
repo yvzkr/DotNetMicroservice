@@ -12,10 +12,10 @@ Content-Type: application/json
   "name": "Category 1"
 }
 ###
-GET {{baseAddress}}/api/v1.2/categories/{{categoryId}}
+GET {{baseAddress}}/api/v1/categories/{{categoryId}}
 Accept: application/json
 ###
-POST {{baseAddress}}/api/courses
+POST {{baseAddress}}/api/v1/courses
 Accept: application/json
 Content-Type: application/json
 
@@ -27,7 +27,7 @@ Content-Type: application/json
   "categoryId": "{{categoryId}}"
 }
 ###
-PUT {{baseAddress}}/api/courses
+PUT {{baseAddress}}/api/v1/courses
 Accept: application/json
 Content-Type: application/json
 
@@ -41,16 +41,16 @@ Content-Type: application/json
 }
 ###
 ###
-GET {{baseAddress}}/api/courses
+GET {{baseAddress}}/api/v1/courses
 Accept: application/json
 ###
-GET {{baseAddress}}/api/courses/{{courseId}}
+GET {{baseAddress}}/api/v1/courses/{{courseId}}
 Accept: application/json
 ###
-Delete {{baseAddress}}/api/courses/{{courseId}}
+Delete {{baseAddress}}/api/v1/courses/{{courseId}}
 Accept: application/json
 ###
-Get {{baseAddress}}/api/courses/user/{{userId}}
+Get {{baseAddress}}/api/v1/courses/user/{{userId}}
 Accept: application/json
 ###
 

@@ -12,7 +12,7 @@ namespace UdemyNewMicroservice.Catalog.Api.Features.Courses
     {
         public static void AddCourseGroupEndpointExt(this WebApplication app, ApiVersionSet apiVersionSet)
         {
-            app.MapGroup("api/v:{version:apiVersion}/courses").WithTags("Courses").WithApiVersionSet(apiVersionSet)
+            app.MapGroup("api/v{version:apiVersion}/courses").WithTags("Courses").WithApiVersionSet(apiVersionSet)
                 .CreateCourseGroupItemEndpoint()
                 .GetAllCourseGroupItemEndpoint()
                 .GetByIdCourseGroupItemEndpoint()
