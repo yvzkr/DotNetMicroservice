@@ -1,6 +1,4 @@
-﻿using UdemyNewMicroservice.Catalog.Api.Features.Courses.Create;
-using UdemyNewMicroservice.Catalog.Api.Features.Courses.Dtos;
-using UdemyNewMicroservice.Shared.Filters;
+﻿using UdemyNewMicroservice.Catalog.Api.Features.Courses.Dtos;
 
 namespace UdemyNewMicroservice.Catalog.Api.Features.Courses.GetAll
 {
