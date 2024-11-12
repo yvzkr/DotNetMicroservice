@@ -6,7 +6,7 @@ namespace UdemyNewMicroservice.Basket.Api.Features.Baskets.DeleteBasketItem
     {
         public DeleteBasketItemCommandValidator()
         {
-            RuleFor(x => x.CourseId).NotEmpty().WithMessage("CourseId is required");
+            RuleFor(x => x.Id).NotEmpty().WithMessage("CourseId is required");
         }
     }
 }
