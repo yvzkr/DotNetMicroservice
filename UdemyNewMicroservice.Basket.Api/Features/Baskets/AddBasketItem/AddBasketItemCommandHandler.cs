@@ -16,7 +16,7 @@ namespace UdemyNewMicroservice.Basket.Api.Features.Baskets.AddBasketItem
 
 
             // TODO : change userId
-            Guid userId = Guid.NewGuid();
+            Guid userId = Guid.Parse("332ee8cd-f3f6-49fa-92e2-5fdb188b3377");
             var cacheKey = string.Format(BasketConst.BasketCacheKey, userId);
 
             var basketAsString = await distributedCache.GetStringAsync(cacheKey, token: cancellationToken);
@@ -43,6 +43,7 @@ namespace UdemyNewMicroservice.Basket.Api.Features.Baskets.AddBasketItem
 
             if (existingBasketItem is not null)
             {
+                // TODO : business rule
                 currentBasket.BasketItems.Remove(existingBasketItem);
             }
 
