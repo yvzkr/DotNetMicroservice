@@ -1,4 +1,5 @@
 using UdemyNewMicroservice.Basket.Api;
+using UdemyNewMicroservice.Basket.Api.Features.Baskets;
 using UdemyNewMicroservice.Shared.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,7 +13,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration.GetConnectionString("Redis");
 });
-
+builder.Services.AddVersioningExt();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,5 +23,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.AddBasketGroupEndpointExt(app.AddVersionSetExt());
 
 app.Run();
