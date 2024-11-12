@@ -35,16 +35,16 @@ namespace UdemyNewMicroservice.Basket.Api.Features.Baskets.AddBasketItem
             currentBasket = JsonSerializer.Deserialize<BasketDto>(basketAsString);
 
 
-            var existingBasketItem = currentBasket!.BasketItems.FirstOrDefault(x => x.Id == request.CourseId);
+            var existingBasketItem = currentBasket!.Items.FirstOrDefault(x => x.Id == request.CourseId);
 
 
             if (existingBasketItem is not null)
             {
                 // TODO : business rule
-                currentBasket.BasketItems.Remove(existingBasketItem);
+                currentBasket.Items.Remove(existingBasketItem);
             }
 
-            currentBasket.BasketItems.Add(newBasketItem);
+            currentBasket.Items.Add(newBasketItem);
 
             await CreateCacheAsync(currentBasket, cacheKey, cancellationToken);
 
