@@ -1,11 +1,11 @@
 @baseAddress = http://localhost:5280
-@categoryId=08dcff11-d1d4-d187-04bf-1b629e590000
-@courseId=08dcf8df-9fc1-d3fc-04bf-1b629e590000
+@categoryId=08dd388a-4d2d-7b2d-e0d0-45b778850000
+@courseId=08dd388a-7742-7bcb-e0d0-45b778850000
 @userId=9e590000-1b62-04bf-09c6-08dcff11d209
 GET {{baseAddress}}/api/v1/categories
 Accept: application/json
 ###
-Post {{baseAddress}}/api/categories
+Post {{baseAddress}}/api/v1/categories
 Accept: application/json
 Content-Type: application/json
 {
@@ -20,7 +20,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "name": "New Course 3",
+  "name": "New Course 1",
   "description": "This is a new course",
   "price": 99.99,
   "imageUrl": "http://example.com/picture.jpg",
