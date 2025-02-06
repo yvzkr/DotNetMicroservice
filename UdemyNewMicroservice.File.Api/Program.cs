@@ -1,4 +1,5 @@
 using Microsoft.Extensions.FileProviders;
+using UdemyNewMicroservice.Catalog.Api.Features.Courses;
 using UdemyNewMicroservice.Discount.Api;
 using UdemyNewMicroservice.Shared.Extensions;
 
@@ -14,7 +15,7 @@ builder.Services.AddVersioningExt();
 
 
 var app = builder.Build();
-
+app.AddFileGroupEndpointExt(app.AddVersionSetExt());
 
 app.UseStaticFiles();
 if (app.Environment.IsDevelopment())
